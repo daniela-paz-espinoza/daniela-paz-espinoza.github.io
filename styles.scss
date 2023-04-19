@@ -1,0 +1,309 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+$breakpoints: (
+    sm : 768px,
+);
+
+@mixin media-up($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+
+    }
+}
+
+nav {
+    position: absolute;
+    width: 1400px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+
+    @include media-up(sm) {
+        content: url('menuresponsive.png');
+        position: absolute;
+        width: 768px;
+        height: 152px;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.image2 {
+    position: absolute;
+    width: 455px;
+    height: 75px;
+    left: 473px;
+    top: 69px;
+
+    @include media-up(sm) {
+        content: url('openresp.png');
+        position: absolute;
+        width: 455px;
+        height: 75px;
+        left: 127px;
+        top: 152px;
+
+    }
+}
+
+
+.image3 {
+    position: absolute;
+    width: 1400px;
+    height: 260px;
+    left: 0px;
+    top: 158px;
+
+    @include media-up(sm) {
+        content: url('header-deskresp.png');
+        position: absolute;
+        width: 768px;
+        height: 768px;
+        left: 0px;
+        top: 223px;
+    }
+
+}
+
+.image4 {
+    position: absolute;
+    width: 937.71px;
+    height: 121.73px;
+    left: 197px;
+    top: 483px;
+
+    @include media-up(sm) {
+        content: url('textresp.png');
+        position: absolute;
+        width: 640px;
+        height: 270px;
+        left: 60px;
+        top: 1036px;
+    }
+}
+
+.image5 {
+    position: absolute;
+    width: 561px;
+    height: 591px;
+    left: 108px;
+    top: 627px;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 718px;
+        height: 728px;
+        left: 23px;
+        top: 1346px;
+    }
+
+}
+
+.image6 {
+    position: absolute;
+    width: 231px;
+    height: 28px;
+    left: 273px;
+    top: 1175px;
+    cursor: pointer;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 231px;
+        height: 28px;
+        left: 273px;
+        top: 2000px;
+        cursor: pointer;
+    }
+}
+
+.image7 {
+    position: absolute;
+    width: 602px;
+    height: 593px;
+    left: 690px;
+    top: 625px;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 718px;
+        height: 500px;
+        left: 22px;
+        top: 2097px;
+    }
+}
+
+.image8 {
+    position: absolute;
+    width: 231px;
+    height: 28px;
+    left: 873px;
+    top: 1175px;
+    cursor: pointer;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 231px;
+        height: 28px;
+        left: 273px;
+        top: 2550px;
+        cursor: pointer;
+    }
+}
+
+.image9 {
+    position: absolute;
+    width: 353px;
+    height: 365px;
+    left: 113px;
+    top: 1244px;
+    z-index: -1;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 718px;
+        height: 728px;
+        left: 21px;
+        top: 2620px;
+    }
+}
+
+
+.image10 {
+    position: absolute;
+    width: 803px;
+    height: 365px;
+    left: 489px;
+    top: 1245px;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 718px;
+        height: 500px;
+        left: 22px;
+        top: 3369px;
+
+    }
+}
+
+.image11 {
+    position: absolute;
+    width: 803px;
+    height: 420px;
+    left: 114px;
+    top: 1647px;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 718px;
+        height: 728px;
+        left: 22px;
+        top: 3892px;
+
+    }
+}
+
+.image12 {
+    position: absolute;
+    width: 353px;
+    height: 420px;
+    left: 941px;
+    top: 1647px;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 718px;
+        height: 500px;
+        left: 21px;
+        top: 4641px;
+
+    }
+}
+
+.image13 {
+    position: absolute;
+    width: 298px;
+    height: 44px;
+    left: 551px;
+    top: 2190px;
+
+    @include media-up(sm) {
+        display: none;
+    }
+}
+
+.image14 {
+    position: absolute;
+    width: 853px;
+    height: 77px;
+    left: 273px;
+    top: 2411px;
+
+    @include media-up(sm) {
+        display: none;
+    }
+}
+
+
+.splide {
+    position: absolute;
+    width: 1100px;
+    height: 70px;
+    left: 150px;
+    top: 2276px;
+    cursor: pointer;
+
+    @include media-up(sm) {
+        position: absolute;
+        width: 673px;
+        height: 60px;
+        left: 45px;
+        top: 5188px;
+    }
+}
+
+
+
+
+
+// @use 'anidacion';
+
+// //variables
+// $color-pricipal: #e4bdbd;
+// $color-letra: blue;
+
+// body {
+//     background: $color-pricipal;
+// }
+// h1{
+//     color: $color-letra
+// }
+// p {
+//     color: $color-letra
+// }
+
+// //mixins
+// @mixin caja_personalizada($fondo: white, $color: $color-letra) {
+//     background-color: $fondo;
+//     border:4px solid black ;
+//     box-shadow: 0px 0px 2px black;
+//     color: $color;
+//     margin: 20px;
+// }
+
+// .caja {
+//     @include caja_personalizada();
+// }
+
+// .caja-secundaria {
+//     @include caja_personalizada($fondo: gray, $color: red );
+// }
+
+// //operadores
+// .caja, .caja-secundaria {
+//     width: 400px - 100px;
+
+// }
