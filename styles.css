@@ -223,6 +223,11 @@ nav {
   left: 551px;
   top: 2190px;
 }
+@media screen and (max-width: 768px) {
+  .image13 {
+    display: none;
+  }
+}
 
 .image14 {
   position: absolute;
